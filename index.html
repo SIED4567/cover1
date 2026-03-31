@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>⚡ Flash Deal – iPhone @ ₹1</title>
+
+<style>
+:root{
+  --amazon-orange:#ff9900;
+  --amazon-dark:#131921;
+  --amazon-light:#232f3e;
+  --danger:#e53935;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+}
+
+body{
+  background:#f2f2f2;
+  color:#111;
+}
+
+/* HEADER */
+.header{
+  background:var(--amazon-dark);
+  padding:12px;
+  display:flex;
+  align-items:center;
+}
+.header img{height:30px;}
+.header span{
+  color:#fff;
+  font-size:13px;
+  margin-left:8px;
+}
+
+/* FLASH STRIP */
+.flash{
+  background:linear-gradient(90deg,#ff0000,#ff6a00);
+  color:#fff;
+  text-align:center;
+  padding:10px;
+  font-weight:800;
+  font-size:14px;
+  animation:blink 1s infinite;
+}
+@keyframes blink{
+  50%{opacity:.6}
+}
+
+/* TOP DOWNLOAD */
+.top-download{
+  background:#fff;
+  margin:14px;
+  padding:16px;
+  border-radius:16px;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+  border:2px solid var(--amazon-orange);
+}
+
+.top-download a{
+  display:block;
+  background:var(--amazon-orange);
+  color:#000;
+  padding:16px;
+  border-radius:40px;
+  font-weight:900;
+  text-decoration:none;
+  font-size:17px;
+  animation:pulse 1.4s infinite;
+}
+
+@keyframes pulse{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.05)}
+  100%{transform:scale(1)}
+}
+
+.top-download p{
+  font-size:13px;
+  margin-top:8px;
+  color:#444;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(135deg,#000,#1a1a1a);
+  color:#fff;
+  text-align:center;
+  padding:28px 16px;
+}
+
+.hero h1{
+  font-size:22px;
+}
+.hero h1 span{
+  color:var(--amazon-orange);
+  font-size:28px;
+}
+
+.hero p{
+  font-size:14px;
+  margin-top:8px;
+  opacity:.9;
+}
+
+/* COUNTDOWN */
+.countdown-box{
+  margin-top:14px;
+  background:#fff;
+  color:#000;
+  display:inline-block;
+  padding:12px 18px;
+  border-radius:12px;
+  font-weight:900;
+  font-size:20px;
+  box-shadow:0 6px 16px rgba(0,0,0,.3);
+}
+
+.warning{
+  margin-top:8px;
+  font-size:13px;
+  color:#ffeb3b;
+}
+
+/* PRODUCTS */
+.products{
+  padding:16px;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:16px;
+}
+
+.card{
+  background:#fff;
+  border-radius:14px;
+  padding:16px;
+  text-align:center;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+.card img{
+  width:100%;
+  max-height:170px;
+  object-fit:contain;
+}
+
+.card h3{
+  margin-top:10px;
+  font-size:16px;
+}
+
+.price del{
+  color:#888;
+  font-size:13px;
+}
+.price strong{
+  display:block;
+  font-size:24px;
+  color:#1b8f2f;
+}
+
+/* FOOTER */
+footer{
+  background:var(--amazon-light);
+  color:#ccc;
+  font-size:11px;
+  text-align:center;
+  padding:12px;
+}
+
+/* RESPONSIVE */
+@media(min-width:600px){
+  .products{grid-template-columns:repeat(2,1fr);}
+}
+@media(min-width:992px){
+  .products{grid-template-columns:repeat(3,1fr);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg">
+  <span>Flash New Year Deals</span>
+</div>
+
+<div class="flash">
+⚡ FLASH DEAL LIVE – CLAIM BEFORE TIMER ENDS!
+</div>
+
+<!-- TOP CTA -->
+<div class="top-download">
+  <a href="play.html" download>⬇ DOWNLOAD APK NOW</a>
+  <p>🔥 Required to unlock ₹1 iPhone deal</p>
+</div>
+
+<section class="hero">
+  <h1>Get iPhone at just <span>₹1</span></h1>
+  <p>Timer resets for every user • Limited slots</p>
+
+  <div class="countdown-box">
+    ⏰ <span id="timer">05:00</span>
+  </div>
+
+  <div class="warning">
+🔥 Only few deals remaining • High demand
+  </div>
+</section>
+
+<section class="products">
+  <!-- FIXED IMAGE -->
+  <div class="card">
+    <img src="https://m.media-amazon.com/images/I/81SigpJN1KL._SX679_.jpg" alt="iPhone 15 Pro">
+    <h3>iPhone 15 Pro</h3>
+    <div class="price">
+      <del>₹1,59,900</del>
+      <strong>₹1</strong>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L._SX679_.jpg" alt="iPhone 14 Pro">
+    <h3>iPhone 14 Pro</h3>
+    <div class="price">
+      <del>₹1,29,900</del>
+      <strong>₹1</strong>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://m.media-amazon.com/images/I/61VuVU94RnL._SX679_.jpg" alt="iPhone 13">
+    <h3>iPhone 13</h3>
+    <div class="price">
+      <del>₹69,900</del>
+      <strong>₹1</strong>
+    </div>
+  </div>
+</section>
+
+<footer>
+© 2026 Flash Deals • Promotional Campaign • Terms Apply
+</footer>
+
+<script>
+/* FAKE FLASH TIMER */
+let time = 300;
+const timerEl = document.getElementById("timer");
+
+setInterval(()=>{
+  let m = Math.floor(time/60);
+  let s = time%60;
+  timerEl.textContent =
+    String(m).padStart(2,"0")+":"+
+    String(s).padStart(2,"0");
+  time--;
+  if(time < 0){ time = 300; }
+},1000);
+</script>
+
+</body>
+</html>
